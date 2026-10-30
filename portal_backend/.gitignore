@@ -1,7 +1,44 @@
+# ==============================================================================
+# .gitignore - portal_backend (FastAPI + SQLAlchemy + Alembic + Python 3.12)
+# ==============================================================================
+
+# Arquivos de Ambiente e Chaves (NUNCA comitar)
 .env
-.venv/
+.env.*
+!.env.example
+
+# Byte-compiled / otimizados
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+
+# Ambientes Virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Empacotamento e Distribuição
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Testes e Linters
 .pytest_cache/
 .ruff_cache/
-*.egg-info/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Mídia local gerada por sincronização / upload (em produção usa Cloudflare R2 / S3)
+media/
+*.log
+
+# IDEs e Sistema Operacional
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

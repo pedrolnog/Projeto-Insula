@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="48" fill="#111215"/>
+  <!-- Linha horizontal (Ligação / Ponte) -->
+  <rect x="64" y="268" width="384" height="28" fill="#F8F6F2"/>
+  <!-- Dois pilares verticais (Os dois T's de BENEDETTO / Pilares da Ponte) -->
+  <rect x="296" y="120" width="28" height="272" fill="#F8F6F2"/>
+  <rect x="356" y="120" width="28" height="272" fill="#F8F6F2"/>
+  <!-- Detalhe quadrado arquitetônico dourado -->
+  <rect x="64" y="120" width="24" height="24" fill="#C59B63"/>
+</svg>

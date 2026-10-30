@@ -1,0 +1,95 @@
+# ==============================================================================
+# .gitignore raiz - BenedettoApp (Monorepo: portal_backend + portal_frontend)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Arquivos de Ambiente e Credenciais Sensíveis (NUNCA comitar)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------------------------------
+# Sistema Operacional e Editores
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs (VS Code, JetBrains/PyCharm/WebStorm)
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------------------------------------------------------
+# Python / FastAPI Backend
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testes e Cobertura Python
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Mídias e uploads locais (servidos via Cloudflare R2 / S3 em produção)
+portal_backend/media/
+media/
+*.log
+
+# ------------------------------------------------------------------------------
+# Node.js / Next.js Frontend
+# ------------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Next.js build output e cache
+.next/
+out/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testes Frontend / Cypress / Playwright
+coverage/
+.nyc_output/
+
+# Vercel
+.vercel/

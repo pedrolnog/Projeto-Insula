@@ -1,0 +1,48 @@
+# ==============================================================================
+# .gitignore - portal_frontend (Next.js 15 + React 19 + TypeScript)
+# ==============================================================================
+
+# Dependências
+node_modules/
+.pnp
+.pnp.js
+
+# Ambiente e Variáveis Sensíveis
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# Next.js Build & Cache
+.next/
+out/
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Cobertura de Testes
+coverage/
+.nyc_output/
+
+# IDEs e Sistema Operacional
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
